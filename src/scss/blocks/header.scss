@@ -1,0 +1,33 @@
+.header {
+	color: $text-white;
+	background-size: cover;
+	&__inner {
+
+		// display: flex;
+		// flex-direction:column;
+		@media (min-width: $screen-xs) {		
+			justify-content: center;
+ 			width: 295px;
+ 			margin:auto;
+ 			height: 500px;
+ 			&:after {
+				content: '';
+				clear: both;
+				display: table;
+			}
+ 		}
+		@media (min-width: $screen-sm) {
+
+			justify-content: space-between;
+			width: 746px;
+			height: 600px;
+		}
+		@media (min-width: $screen-lg) {
+			width: 1170px;
+			height: 650px;
+			}
+		}
+
+
+}
+
