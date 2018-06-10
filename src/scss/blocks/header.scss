@@ -1,6 +1,7 @@
 .header {
-	color: $text-white;
+	color: $text-black;
 	background-size: cover;
+	background-color: $blue;
 	&__inner {
 
 		// display: flex;
@@ -9,7 +10,6 @@
 			justify-content: center;
  			width: 295px;
  			margin:auto;
- 			height: 500px;
  			&:after {
 				content: '';
 				clear: both;
@@ -20,14 +20,11 @@
 
 			justify-content: space-between;
 			width: 746px;
-			height: 600px;
 		}
 		@media (min-width: $screen-lg) {
-			width: 1170px;
-			height: 650px;
+			width: $screen-lg;
 			}
 		}
-
 
 }
 
