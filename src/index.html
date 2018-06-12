@@ -50,7 +50,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac metus augue.</p>
                 </div>
                 <!-- <h3 class="d_active tab_drawer_heading" rel="tab2">T2</h3> -->
-                <div id="tab2" class="tab_content">
+                <div id="tab2" class="tab_content d_active">
                     <div class="set">
                         <div class="set__name">
                             <span>Название подборки</span>
@@ -83,18 +83,63 @@
                         </div>
                         <div class="night">
                             <span class="night__text">На сколько</span>
-                            <input type="text" class="filter__night">
+                            <select name="" id="night" class="filter__night">
+                                <option value="">0-7 ночей</option>
+                                <option value="">7-14 ночей</option>
+                                <option value="">14-28 ночей</option>
+                            </select>
                         </div>
                         <div class="amount">
                             <span class="amount__text">Количество гостей</span>
-                            <select name="" id="guests" class="filter__amount">
+                            <select name="" id="guests" class="amount__guests">
                                 <option value="">2 взрослых, 2 детей</option>
                                 <option value="">1 взрослый</option>
                                 <option value="">2 взрослых 1 ребенок</option>
 
                             </select>
                         </div>
-                        <select name="" id="price" class="filter__price"></select>
+                        <div class="price">
+                            <span class="price__text">Стоимость тура</span>
+                            <select name="" id="price" class="price__value">
+                                <option value="">0-50 000</option>
+                                <option value="">50 000 - 150 000</option>
+                            </select>
+                        </div>
+                        <div class="category">
+                            <span class="category__text">Категория отелей от</span>
+                            <select name="" id="category" class="category__value">
+                                <option value="" class="category__star2"></option>
+                                <option value="" class="category__star3"></option>
+                                <option value="" class="category__star4"></option>
+                                <option value="" class="category__star5"></option>
+                            </select>
+                        </div>
+                        <div class="rating">
+                            <span class="rating__text">Рейтинг TopHotels</span>
+                            <select name="" id="rating" class="rating__value">
+                                <option value="" class="rating__star2">Ниже 3</option>
+                                <option value="" class="rating__star3">Не ниже 3</option>
+                                <option value="" class="rating__star4">Не ниже 4</option>
+                                <option value="" class="rating__star5">Не ниже 5</option>
+                            </select>
+                        </div>
+                        <div class="food">
+                            <span class="food__text">Тип питания</span>
+                            <select name="" id="food" class="food__type">
+                                <option value="">Любой</option>
+                                <option value="">Вегетарианоский</option>
+                                <option value="">Диетический</option>
+                            </select>
+                        </div>
+                        <div class="location">
+                            <span class="location__text">Расположение</span>
+                            <select name="" id="location" class="location__place">
+                                <option value="">Пляжные, 1-я линия</option>
+                                <option value="">Пляжные, 2-я линия</option>
+                                <option value="">Пляжные, 3-я линия</option>
+                            </select>
+                        </div>
+                        <a href="#" class="tab-delete">Удалить подборку</a>
                     </div>
                 </div>
                 <!-- <h3 class="tab_drawer_heading" rel="tab3">Tab 3</h3> -->
