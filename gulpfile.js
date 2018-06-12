@@ -172,6 +172,7 @@ gulp.task('js', function () {
       dirs.source + '/js/script.js',
       dirs.source + '/js/burger.js',
       dirs.source + '/js/scroll.js',
+      dirs.source + '/js/tabs.js',
     ])
     .pipe(plumber({ errorHandler: onError }))
     .pipe(concat('script.min.js'))
