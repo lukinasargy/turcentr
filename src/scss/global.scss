@@ -11,11 +11,17 @@ h2 {
 	margin: 0;
 }
 .title {
-	width: 960px;
 	margin: auto;
+		@media (min-width: $screen-lg) {
+	width: 960px;
+		
+	}
 }
 .container {
-	width: 960px;
 	margin: auto;
 	background-color: #fff;
+	@media (min-width: $screen-lg) {
+	width: 960px;
+
+	}
 }

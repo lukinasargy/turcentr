@@ -21,10 +21,12 @@
     position: static;
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
     text-align: center;
+    width: 100%;
     // margin-top: 35px;
-
+  }
+  @media (min-width: $screen-lg) {
+    width: 50%;
   }
   &__logo {
     padding-top: 7px;
