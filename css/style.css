@@ -52,7 +52,7 @@ h2 {
     .main-nav__item:last-child a {
       padding-bottom: 180px; }
     .main-nav__item a {
-      font-size: 14px;
+      font-size: 15px;
       display: block;
       padding: 0 12px;
       height: 35px;
@@ -145,6 +145,7 @@ ul.tabs li.active {
   background-color: #fff;
   color: #2d9cdb;
   border-bottom: 3px solid #2d9cdb;
+  height: 48px;
   display: block; }
 
 .tab_container {
@@ -164,10 +165,62 @@ ul.tabs li.active {
 
 .tab-add {
   color: #2d9cdb;
-  line-height: 50px; }
+  line-height: 50px;
+  position: relative;
+  padding-left: 45px;
+  padding-right: 20px;
+  display: inline-block; }
+  .tab-add:before {
+    position: absolute;
+    content: '';
+    background-image: url(../img/plus.png);
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    top: 16px;
+    left: 20px; }
+  .tab-add:hover {
+    background-color: #ccc; }
 
 .tab_drawer_heading {
   display: none; }
+
+.tab-header {
+  border-bottom: 1px solid #bdbdbd; }
+
+.set__name {
+  width: 240px;
+  display: inline-block; }
+
+.set__input {
+  padding: 10px;
+  border: 1px solid #e0e0e0; }
+
+.set__selection {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  width: 223px; }
+
+.set__result {
+  background-color: #ff8e41;
+  border: none;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border-radius: 3px;
+  margin: 10px 0; }
+
+.set:after {
+  content: '';
+  clear: both;
+  display: table; }
+
+.text {
+  font-size: 12px;
+  display: inline-block;
+  color: #bdbdbd;
+  padding: 12px 20px; }
 
 a {
   text-decoration: none;
@@ -243,7 +296,14 @@ h2 {
 
   ul.tabs li {
     display: inline-block;
-    float: left; } }
+    float: left; }
+
+  .set__result {
+    float: right;
+    margin: 35px 0; }
+
+  .set__result:hover {
+    background-color: #ffac73; } }
 
 @media (min-width: 1280px) {
 

@@ -38,13 +38,15 @@
             <h1>Настройки интересов</h1>
         </div>
         <div class="container">
-            <ul class="tabs">
-                <li rel="tab1">ПОДБОРКА ВАСИ</li>
-                <li rel="tab2" class="active">ПОДБОРКА 123</li>
-                <li rel="tab3">ТУРЦИЯ 20.03</li>
-                <li rel="tab4">ПОДБОРКА #1</li>
-            </ul>
-            <a href="#" class="tab-add">ДОБАВИТЬ ПОДБОРКУ</a>
+            <div class="tab-header">
+                <ul class="tabs">
+                    <li rel="tab1">ПОДБОРКА ВАСИ</li>
+                    <li rel="tab2" class="active">ПОДБОРКА 123</li>
+                    <li rel="tab3">ТУРЦИЯ 20.03</li>
+                    <li rel="tab4">ПОДБОРКА #1</li>
+                </ul>
+                <a href="#" class="tab-add">ДОБАВИТЬ ПОДБОРКУ</a>
+            </div>
             <div class="tab_container">
                 <!-- <h3 class="d_active tab_drawer_heading" rel="tab1">Tab 1</h3> -->
                 <div id="tab1" class="tab_content">
@@ -55,11 +57,11 @@
                 <div id="tab2" class="tab_content d_active">
                     <div class="set">
                         <div class="set__name">
-                            <span>Название подборки</span>
+                            <span class="text">Название подборки</span>
                             <input type="text" class="set__input" value="ПОДБОРКА 123">
                         </div>
-                        <div class="set__city">
-                            <span>Ваш город</span>
+                        <div class="set__name">
+                            <span class="text">Ваш город</span>
                             <select name id="city" class="set__selection">
                                 <option value="">Санкт-Петербург</option>
                                 <option value="">Москва</option>
@@ -68,7 +70,7 @@
                         <input type="button" name="submit" value="Смотреть результаты" class="set__result">
                     </div>
                     <div class="land">
-                        <span class="land__text">Вы можете задать несколько стран или регионов для одной подборки</span>
+                        <span class="text">Вы можете задать несколько стран или регионов для одной подборки</span>
                         <div class="land__block">
                             <div class="land__region"></div>
                             <div class="land__city">Таиланд</div>
@@ -80,11 +82,11 @@
                     </div>
                     <div class="filter">
                         <div class="date">
-                            <span class="date__text">Дата вылета</span>
+                            <span class="text">Дата вылета</span>
                             <input type="text" class="date__calendar" placeholder="выберите дату вылета">
                         </div>
                         <div class="night">
-                            <span class="night__text">На сколько</span>
+                            <span class="text">На сколько</span>
                             <select name="" id="night" class="filter__night">
                                 <option value="">0-7 ночей</option>
                                 <option value="">7-14 ночей</option>
@@ -92,7 +94,7 @@
                             </select>
                         </div>
                         <div class="amount">
-                            <span class="amount__text">Количество гостей</span>
+                            <span class="text">Количество гостей</span>
                             <select name="" id="guests" class="amount__guests">
                                 <option value="">2 взрослых, 2 детей</option>
                                 <option value="">1 взрослый</option>
@@ -101,14 +103,14 @@
                             </select>
                         </div>
                         <div class="price">
-                            <span class="price__text">Стоимость тура</span>
+                            <span class="text">Стоимость тура</span>
                             <select name="" id="price" class="price__value">
                                 <option value="">0-50 000</option>
                                 <option value="">50 000 - 150 000</option>
                             </select>
                         </div>
                         <div class="category">
-                            <span class="category__text">Категория отелей от</span>
+                            <span class="text">Категория отелей от</span>
                             <select name="" id="category" class="category__value">
                                 <option value="" class="category__star2"></option>
                                 <option value="" class="category__star3"></option>
@@ -117,7 +119,7 @@
                             </select>
                         </div>
                         <div class="rating">
-                            <span class="rating__text">Рейтинг TopHotels</span>
+                            <span class="text">Рейтинг TopHotels</span>
                             <select name="" id="rating" class="rating__value">
                                 <option value="" class="rating__star2">Ниже 3</option>
                                 <option value="" class="rating__star3">Не ниже 3</option>
@@ -126,7 +128,7 @@
                             </select>
                         </div>
                         <div class="food">
-                            <span class="food__text">Тип питания</span>
+                            <span class="text">Тип питания</span>
                             <select name="" id="food" class="food__type">
                                 <option value="">Любой</option>
                                 <option value="">Вегетарианоский</option>
@@ -134,7 +136,7 @@
                             </select>
                         </div>
                         <div class="location">
-                            <span class="location__text">Расположение</span>
+                            <span class="text">Расположение</span>
                             <select name="" id="location" class="location__place">
                                 <option value="">Пляжные, 1-я линия</option>
                                 <option value="">Пляжные, 2-я линия</option>
