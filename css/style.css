@@ -10,11 +10,9 @@ h2 {
   margin: 0; }
 
 .title {
-  width: 960px;
   margin: auto; }
 
 .container {
-  width: 960px;
   margin: auto;
   background-color: #fff; }
 
@@ -122,21 +120,16 @@ h2 {
       transform: rotate3d(0, 0, 1, -45deg); }
 
 ul.tabs {
-  display: inline-block;
   margin: 0;
   padding: 0;
-  float: left;
   list-style: none;
-  height: 32px;
   border-bottom: 1px solid #e0e0e0; }
 
 ul.tabs li {
-  float: left;
   margin: 0;
   cursor: pointer;
   padding: 0px 21px;
-  height: 31px;
-  line-height: 31px;
+  line-height: 50px;
   background-color: #fff;
   color: #ccc;
   overflow: hidden; }
@@ -155,7 +148,6 @@ ul.tabs li.active {
   display: block; }
 
 .tab_container {
-  border: 1px solid #333;
   border-top: none;
   clear: both;
   float: left;
@@ -172,7 +164,7 @@ ul.tabs li.active {
 
 .tab-add {
   color: #2d9cdb;
-  line-height: 34px; }
+  line-height: 50px; }
 
 .tab_drawer_heading {
   display: none; }
@@ -224,8 +216,8 @@ h2 {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 50%;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
 
   .main-nav__item:first-child a {
     padding-right: 1em;
@@ -247,12 +239,25 @@ h2 {
     font-size: 14px; }
 
   .toggler {
-    display: none; } }
+    display: none; }
+
+  ul.tabs li {
+    display: inline-block;
+    float: left; } }
 
 @media (min-width: 1280px) {
 
+  .title {
+    width: 960px; }
+
+  .container {
+    width: 960px; }
+
   .header__inner {
     width: 1280px; }
+
+  .main-nav {
+    width: 50%; }
 
   .main-nav__item a {
     font-size: 16px; }
