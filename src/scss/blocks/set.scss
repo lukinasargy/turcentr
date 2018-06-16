@@ -1,0 +1,45 @@
+.set {
+
+	&__name {
+		width: 240px;
+		display: inline-block;
+	}
+
+	&__input {
+		padding: 10px;
+		border:1px solid $x-light-grey;
+	}
+	&__selection {
+		padding: 10px;
+		border:1px solid $x-light-grey;
+		width: 223px;
+	}
+	&__result {
+		background-color: $orange;
+		border: none;
+		color: $text-white;
+		font-size: $font-size;
+		text-transform: uppercase;
+		padding: 15px 20px;
+		border-radius: 3px;
+		margin: 10px 0;
+		@media (min-width:$screen-sm) {
+		float: right;
+		margin: 35px 0;
+		&:hover {
+			background-color: #ffac73;
+		}
+		}
+	}
+	&:after {
+		content: '';
+		clear: both;
+		display: table;
+	}
+}
+.text {
+		font-size: $font-size-s;
+		display: inline-block;
+		color: $lighter-grey;
+		padding: 12px 20px;;
+}

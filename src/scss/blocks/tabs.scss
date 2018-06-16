@@ -16,7 +16,7 @@ ul.tabs li {
 	padding: 0px 21px;
 	line-height: 50px;
 	background-color: #fff;
-	color: #ccc;
+	color: $light-grey;
 	overflow: hidden;
 		@media (min-width: $screen-sm) {
 	display: inline-block;
@@ -27,14 +27,15 @@ ul.tabs li {
 .tab_last { border-right: 1px solid #333; }
 
 ul.tabs li:hover {
-	background-color: #ccc;
+	background-color: $light-grey;
 	color: #333;
 }
 
 ul.tabs li.active {
 	background-color: #fff;
 	color: #2d9cdb;
-	border-bottom: 3px solid #2d9cdb;
+	border-bottom:3px solid #2d9cdb;
+	height: 48px;
 	display: block;
 }
 
@@ -58,9 +59,26 @@ ul.tabs li.active {
 .tab-add {
 	color: #2d9cdb;
 	line-height: 50px;
+	position: relative;
+	padding-left: 45px;
+	padding-right: 20px;
+	display: inline-block;
+	&:before {
+		position: absolute;
+		content: '';
+		background-image: url(../img/plus.png);
+		width: 17px;
+		height: 17px;
+		background-repeat: no-repeat;
+		top:16px;
+		left:20px;
+	}
+	&:hover {
+		background-color: $light-grey;
+	}
 }
 .tab_drawer_heading { display: none; }
-
+.tab-header {	border-bottom: 1px solid $lighter-grey;}
 // @media screen and (max-width: 480px) {
 //   .tabs {
 //     display: none;

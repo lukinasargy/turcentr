@@ -19,10 +19,19 @@ $(document).ready(function(){
       if (!currentClassName) { 
       return 'tab'+(index+1);
       }    
-    });var newId=$(this).attr("rel")
-    var newPanel = $("#"+newId)
-    $(".tab_container").append('<div class="tab_content">New tab</div>').last().attr('id',newPanel);
-
-
+    });
+    var newId=$(".tabs li").last().attr("rel")
+    var newPanel = (newId)
+    $(".tab_container").append('<div class="tab_content">New tab content</div>')
+    $(".tab_content").last().attr('id',newPanel);
+    $(".tabs li").last().on("click", function(){
+      $(this).addClass("active")
+        .siblings().removeClass("active")
+        var activeId = $(this).attr("rel")
+        var activePanel = $("#"+activeId);
+        var othersPanel = activePanel.siblings();
+        othersPanel.hide();
+        activePanel.addClass("d_active").fadeIn().siblings().removeClass("d_active");
+    });
   });
 });
