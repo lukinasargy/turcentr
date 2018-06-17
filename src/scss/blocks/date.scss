@@ -1,0 +1,12 @@
+.filter {
+	display: inline-block;
+}
+.date {
+	width: 270px;
+	display: inline-block;
+	&__calendar {
+		width: 255px;
+		border:1px solid $x-light-grey;
+		padding: 15px 0px 15px 20px;
+	}
+}

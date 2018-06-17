@@ -1,0 +1,102 @@
+.land {
+	&__block {
+		border: 1px solid $x-light-grey;
+		padding: 15px;
+		border-radius: 2px;
+	}
+	&__region {
+		padding-bottom: 15px;
+	}
+	&__close {
+		position: absolute;
+		right: 32px;
+		top: 32px;
+		width: 15px;
+		height: 15px;
+		opacity: 0.3;
+		&:hover {
+			opacity: 1;
+			cursor:pointer;
+		}
+		&:before, &:after {
+		position: absolute;
+		left: 25px;
+		top: -20px;
+		content: ' ';
+		height: 15px;
+		width: 2px;
+		background-color: #333;
+		@media (min-width: $screen-sm) {
+			left: 25px;
+			top: -22px;
+			}
+		}
+		&:before {transform: rotate(45deg);	}
+		&:after {transform: rotate(-45deg);	}
+	}
+	&__text {
+		position: relative;
+	}
+	&__country {
+		// position: relative;
+		background-color: $light-grey;
+		padding: 7px 55px 7px 35px;
+		border-radius: 20px;
+		position: relative;
+		margin-top: 10px;
+		display: inline-block;
+
+		&--thai:before {
+			content: '';
+			position: absolute;
+			background-image: url(../img/thai.png);
+			width: 16px;
+			height: 13px;
+			left:13px;
+			top:11px;
+		}
+		&--viet:before {
+			content: '';
+			position: absolute;
+			background-image: url(../img/viet.png);
+			width: 16px;
+			height: 13px;
+			left:13px;
+			top:11px;
+		}
+		&--indo:before {
+			content: '';
+			position: absolute;
+			background-image: url(../img/indo.png);
+			width: 16px;
+			height: 13px;
+			left:13px;
+			top:11px;
+		}
+
+		@media (min-width:$screen-sm) {
+			display: inline-block;
+		}
+	}
+	&__add {
+		padding: 7px 20px;
+		border-radius: 20px;
+		display: inline-block;
+		text-transform: uppercase;
+		margin: 25px 20px 0px 20px;
+		&:hover {
+			cursor:pointer;
+		}
+		&--region {
+			color: $blue;
+			border: 1px solid $blue;
+		}
+		&--country {
+			color: $text-white;
+			background-color: $blue;
+		}
+		@media (min-width:$screen-sm) {
+		margin: 25px 20px 25px 20px;
+		}
+	}
+}

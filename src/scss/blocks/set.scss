@@ -9,7 +9,7 @@
 		padding: 10px;
 		border:1px solid $x-light-grey;
 	}
-	&__selection {
+	&__city {
 		padding: 10px;
 		border:1px solid $x-light-grey;
 		width: 223px;
@@ -35,6 +35,33 @@
 		content: '';
 		clear: both;
 		display: table;
+	}
+	&__close {
+		position: relative;
+		left:32px;
+		top: 32px;
+		width: 15px;
+		height: 15px;
+		opacity: 0.3;
+		&:hover {
+			opacity: 1;
+			cursor:pointer;
+		}
+		&:before, &:after {
+		position: absolute;
+		right: -190px;
+		top: -60px;
+		content: ' ';
+		height: 15px;
+		width: 2px;
+		background-color: #333;
+		@media (min-width: $screen-sm) {
+			left: 190px;
+			top: -60px;
+			}
+		}
+		&:before {transform: rotate(45deg);	}
+		&:after {transform: rotate(-45deg);	}
 	}
 }
 .text {

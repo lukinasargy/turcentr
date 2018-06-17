@@ -62,32 +62,44 @@
                         </div>
                         <div class="set__name">
                             <span class="text">Ваш город</span>
-                            <select name id="city" class="set__selection">
-                                <option value="">Санкт-Петербург</option>
-                                <option value="">Москва</option>
-                            </select>
+                            <input type="text" class="set__city" value="Санкт-Петербург">
+                            <span class="set__close"></span>
+<!--                                                         <form action="">
+                                <input type="text" class="set__city" required="required" value="Санкт-Петербург">
+                                <button type="reset" class="set__close">&times;</button>
+                            </form> -->
                         </div>
                         <input type="button" name="submit" value="Смотреть результаты" class="set__result">
                     </div>
                     <div class="land">
                         <span class="text">Вы можете задать несколько стран или регионов для одной подборки</span>
                         <div class="land__block">
-                            <div class="land__region"></div>
-                            <div class="land__city">Таиланд</div>
-                            <div class="land__city">Вьетнам</div>
-                            <div class="land__city">Индонезия</div>
-                            <div class="add-region">Добавить регион</div>
-                            <div class="add-country">Добавить страны</div>
+                            <div class="land__region">Юго-восточная Азия</div>
+                            <div class="land__country land__country--thai">
+                                <span class="land__text">Таиланд</span>
+                                <span class="land__close"></span>
+                            </div>
+                            <div class="land__country land__country--viet">
+                                <span class="land__text">Вьетнам</span>
+                                <span class="land__close"></span>
+                            </div>
+                            <div class="land__country land__country--indo">
+                                <span class="land__text">Индонезия</span>
+                                <span class="land__close"></span>
+                            </div>
+
                         </div>
+                        <div class="land__add land__add--region">Добавить регион</div>
+                        <div class="land__add land__add--country">Добавить страны</div>
                     </div>
                     <div class="filter">
                         <div class="date">
                             <span class="text">Дата вылета</span>
-                            <input type="text" class="date__calendar" placeholder="выберите дату вылета">
+                            <input type="text" class="date__calendar datepicker-here" data-multiple-dates="2" placeholder="выберите дату вылета">
                         </div>
                         <div class="night">
                             <span class="text">На сколько</span>
-                            <select name="" id="night" class="filter__night">
+                            <select name="" id="night" class="sel">
                                 <option value="">0-7 ночей</option>
                                 <option value="">7-14 ночей</option>
                                 <option value="">14-28 ночей</option>
@@ -95,7 +107,7 @@
                         </div>
                         <div class="amount">
                             <span class="text">Количество гостей</span>
-                            <select name="" id="guests" class="amount__guests">
+                            <select name="" id="guests" class="sel">
                                 <option value="">2 взрослых, 2 детей</option>
                                 <option value="">1 взрослый</option>
                                 <option value="">2 взрослых 1 ребенок</option>
@@ -104,14 +116,14 @@
                         </div>
                         <div class="price">
                             <span class="text">Стоимость тура</span>
-                            <select name="" id="price" class="price__value">
+                            <select name="" id="price" class="sel">
                                 <option value="">0-50 000</option>
                                 <option value="">50 000 - 150 000</option>
                             </select>
                         </div>
                         <div class="category">
                             <span class="text">Категория отелей от</span>
-                            <select name="" id="category" class="category__value">
+                            <select name="" id="category" class="sel">
                                 <option value="" class="category__star2"></option>
                                 <option value="" class="category__star3"></option>
                                 <option value="" class="category__star4"></option>
@@ -120,7 +132,7 @@
                         </div>
                         <div class="rating">
                             <span class="text">Рейтинг TopHotels</span>
-                            <select name="" id="rating" class="rating__value">
+                            <select name="" id="rating" class="sel">
                                 <option value="" class="rating__star2">Ниже 3</option>
                                 <option value="" class="rating__star3">Не ниже 3</option>
                                 <option value="" class="rating__star4">Не ниже 4</option>
@@ -129,7 +141,7 @@
                         </div>
                         <div class="food">
                             <span class="text">Тип питания</span>
-                            <select name="" id="food" class="food__type">
+                            <select name="" id="food" class="sel">
                                 <option value="">Любой</option>
                                 <option value="">Вегетарианоский</option>
                                 <option value="">Диетический</option>

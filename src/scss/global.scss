@@ -12,8 +12,14 @@ h2 {
 }
 .title {
 	margin: auto;
+	padding-top: 50px;
+	padding-left: 20px;
+	@media (min-width:$screen-sm) {
+		padding-top: 0;
+	}
 		@media (min-width: $screen-lg) {
-	width: 960px;
+
+		width: 960px;
 		
 	}
 }
