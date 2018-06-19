@@ -710,6 +710,41 @@ ul.tabs li.active {
   display: inline-block;
   width: 245px; }
 
+.category {
+  display: inline-block;
+  width: 160px; }
+  .category__box {
+    vertical-align: middle;
+    width: 133px;
+    padding: 10px 15px 14px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px; }
+  .category__star {
+    color: #f2f2f2;
+    position: relative; }
+    .category__star:hover {
+      cursor: pointer; }
+    .category__star:before {
+      content: "\2605";
+      position: absolute;
+      top: 0;
+      left: 0; }
+
+.rating {
+  display: inline-block;
+  width: 185px; }
+  .rating__star--crown {
+    color: #27ae60;
+    display: none; }
+
+.food {
+  width: 120px;
+  display: inline-block; }
+
+.location {
+  display: inline-block;
+  width: 228px; }
+
 .sel {
   padding: 15px 20px;
   -webkit-appearance: none;
@@ -717,7 +752,24 @@ ul.tabs li.active {
           appearance: none;
   cursor: pointer;
   width: 103%;
-  border: 1px solid #e0e0e0; }
+  border: 1px solid #e0e0e0;
+  vertical-align: middle; }
+
+.tab-delete {
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  padding: 20px 0px 20px 40px;
+  font-size: 15px;
+  color: #eb5757; }
+  .tab-delete:before {
+    content: '';
+    background-image: url(../img/delete.png);
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 24px;
+    left: 20px; }
 
 a {
   text-decoration: none;
