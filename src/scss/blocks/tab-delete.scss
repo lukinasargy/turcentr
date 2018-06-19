@@ -1,0 +1,17 @@
+.tab-delete {
+	text-transform: uppercase;
+	position: relative;
+	display: inline-block;
+	padding: 20px 0px 20px 40px;
+	font-size: 15px;
+	color: $red;
+	&:before {
+		content: '';
+		background-image: url(../img/delete.png);
+		width: 16px;
+		height: 16px;
+		position: absolute;
+		top: 24px;
+		left: 20px;
+	}
+}

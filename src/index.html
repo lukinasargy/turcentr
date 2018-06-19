@@ -121,22 +121,31 @@
                                 <option value="">50 000 - 150 000</option>
                             </select>
                         </div>
+
+                        <br/>
                         <div class="category">
                             <span class="text">Категория отелей от</span>
-                            <select name="" id="category" class="sel">
+                            <div class="category__box">
+                                <span class="category__star">☆</span>
+                                <span class="category__star">☆</span>
+                                <span class="category__star">☆</span>
+                                <span class="category__star">☆</span>
+                                <span class="category__star">☆</span>
+                            </div>
+<!--                             <select name="" id="category" class="sel">
                                 <option value="" class="category__star2"></option>
                                 <option value="" class="category__star3"></option>
                                 <option value="" class="category__star4"></option>
                                 <option value="" class="category__star5"></option>
-                            </select>
+                            </select> -->
                         </div>
                         <div class="rating">
                             <span class="text">Рейтинг TopHotels</span>
                             <select name="" id="rating" class="sel">
-                                <option value="" class="rating__star2">Ниже 3</option>
-                                <option value="" class="rating__star3">Не ниже 3</option>
-                                <option value="" class="rating__star4">Не ниже 4</option>
-                                <option value="" class="rating__star5">Не ниже 5</option>
+                                <option value="" class="rating__star">Ниже <span class="rating__star--crown">3</span></option>
+                                <option value="" class="rating__star">Не ниже <span class="rating__star--crown">3</span></option>
+                                <option value="" class="rating__star">Не ниже <span class="rating__star--crown">4</span></option>
+                                <option value="" class="rating__star">Не ниже <span class="rating__star--crown">5</span></option>
                             </select>
                         </div>
                         <div class="food">
@@ -149,7 +158,7 @@
                         </div>
                         <div class="location">
                             <span class="text">Расположение</span>
-                            <select name="" id="location" class="location__place">
+                            <select name="" id="location" class="sel">
                                 <option value="">Пляжные, 1-я линия</option>
                                 <option value="">Пляжные, 2-я линия</option>
                                 <option value="">Пляжные, 3-я линия</option>
@@ -175,21 +184,28 @@
         <div class="footer__inner">
             <div class="footer__title">Туристический проект</div>
             <div class="contacts">
-                <div class="contacts__item">
+                <div class="contact">
                     <span>Москва,1-й Щипковский переулок, д.1</span>
                     <a href="#">Показать на карте</a>
                 </div>
-                <div class="contacts__item">
+                <div class="contact">
                     <p>Время работа офисе: 
                        Будни 10:00 - 21:00
                         Выходные и праздники 11:00 - 17:00</p>
                 </div>
-                <div class="contacts__item">
+                <div class="contact">
                     <a href="tel:+74955855555">+74955855555</a>
                     <a href="#">Обратная связь</a>
                 </div>
-                <div class="contacts__item"></div>
+                <div class="contact">
+                    <span class="contact__item contact__item--vk">Вконтакте</span>
+                    <span class="contact__item contact__item--fb">Facebook</span>
+                    <span class="contact__item contact__item--ig">Instagram</span>
+                    <span class="contact__item contact__item--ok">Одноклассники</span>
+                    
+                </div>
             </div>
+            <span class="copyright">Разработано командой TourAdmin © 2017</span>
         </div>   
     </footer>
     <script src="js/script.min.js"></script>

@@ -1,0 +1,8 @@
+.rating {
+	display: inline-block;
+	width: 185px;
+	&__star--crown {
+		color: $green;
+		display: none;
+	}
+}

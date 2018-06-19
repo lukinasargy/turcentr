@@ -1,0 +1,25 @@
+.category {
+	display: inline-block;
+	width: 160px;
+	&__box {
+		vertical-align: middle;
+		width: 133px;
+		padding: 10px 15px 14px 15px;
+		border:1px solid $x-light-grey;
+		border-radius: 2px;
+	}
+	&__star {
+		color: $light-grey;
+		position: relative;
+		&:hover {
+			cursor:pointer;
+		}
+		&:before {
+			content: "\2605";
+   			position: absolute;
+   			top: 0;
+   			left: 0;
+
+		}
+	}
+}
