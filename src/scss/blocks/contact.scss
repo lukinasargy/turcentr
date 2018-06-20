@@ -1,0 +1,23 @@
+.contact {
+	display: inline-block;
+	width: 100%;
+	&__ul {
+		text-decoration: underline;
+	}
+	&__item {
+		display: inline-block;
+	}
+}
+.contact div {
+	line-height: 20px;
+}
+.contacts {
+	@media (min-width:$screen-xs) {
+		display:flex;
+		flex-direction: column;
+	}
+	@media (min-width:$screen-sm){
+		flex-direction: row;
+
+	}
+}

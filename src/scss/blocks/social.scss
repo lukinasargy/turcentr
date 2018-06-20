@@ -1,0 +1,66 @@
+.social {
+	// display: inline-block;
+	// width: 100% ;
+	padding-left: 20px;
+	&__item {
+		display: block;
+		position: relative;
+		line-height: 20px;
+
+	}
+	&__item:hover {
+		color: $orange;
+	}
+	&__item--vk:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -20px;
+		background-image: url(../img/vk-grey.svg);
+		background-size: 100%;
+		width: 15px;
+		height: 15px;
+	}
+	&__item--vk:hover:before {
+		background-image: url(../img/vk-orange.svg);
+	}
+	&__item--fb:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -20px;
+		background-image: url(../img/fb-grey.svg);
+		background-size: 100%;
+		width: 15px;
+		height: 15px;
+	}
+	&__item--fb:hover:before {
+		background-image: url(../img/fb-orange.svg);
+	}
+	&__item--ig:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -20px;
+		background-image: url(../img/ig-grey.svg);
+		background-size: 100%;
+		width: 15px;
+		height: 15px;
+	}
+	&__item--ig:hover:before {
+		background-image: url(../img/ig-orange.svg);
+	}
+	&__item--ok:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: -20px;
+		background-image: url(../img/ok-grey.svg);
+		background-size: 100%;
+		width: 15px;
+		height: 15px;
+	}
+	&__item--ok:hover:before {
+		background-image: url(../img/ok-orange.svg);
+	}
+}
